@@ -8,6 +8,7 @@ public class DbConfig : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=sqlserver-crud;Integrated Security=True");
+        optionsBuilder.UseSqlServer(
+            "Server=.; Database=sqlserver-crud; Integrated Security=True");
     }
 }
